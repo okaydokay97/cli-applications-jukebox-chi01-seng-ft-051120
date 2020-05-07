@@ -45,7 +45,7 @@ def play(songs)
       end
     counter += 1
   end
-  puts "Invalid input, please try again"
+  return puts "Invalid input, please try again"
 end
 
 def exit_jukebox
