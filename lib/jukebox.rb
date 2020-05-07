@@ -48,10 +48,6 @@ def play(songs)
   return puts "Invalid input, please try again"
 end
 
-def exit_jukebox
-  puts "Goodbye"
-end
-
 
 def exit_jukebox
   puts "Goodbye"
