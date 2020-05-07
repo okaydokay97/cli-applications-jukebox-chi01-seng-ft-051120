@@ -32,6 +32,24 @@ def play(songs)
   input = gets.strip
   counter = 0
   
+  
+  
+#   if input.to_i >= 1 && input.to_i <= songs.length
+#     puts "Playing #{songs[input.to_i - 1]}"
+#   elsif songs.include?(input)
+#     found = songs.find {|song| input == song}
+#     puts "Playing #{found}"
+#   else
+#     puts "Invalid input, please try again"
+#   end
+# end
+  
+  
+  
+  
+  
+  
+  
     songs.each do |song|
       if input == song || input == ((counter + 1).to_s)
         success = puts "Playing #{song}"
@@ -47,32 +65,27 @@ def exit_jukebox
 end
 
 
+def exit_jukebox
+  puts "Goodbye"
+end
+
+
 def run(songs)
   puts "Please enter a command:"
-  input = gets.strip
+  input = ""
   until input == "exit" do
+  input = gets.strip
     if input == "help"
       help
-      input = gets.strip
     elsif input == "list"
       list(songs)
-      input = gets.strip
     elsif input == "play"
       play(songs)
-      input = gets.strip
     end
   end
   exit_jukebox
 end
  
-
-
-
-
-
-
-
-
 
 
 
