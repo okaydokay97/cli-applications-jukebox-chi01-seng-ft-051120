@@ -41,8 +41,7 @@ def play(songs)
   
     songs.each do |song|
       if input == song || input == ((counter + 1).to_s)
-        success = puts "Playing #{song}"
-        return success
+        return puts "Playing #{song}"
       end
     counter += 1
   end
